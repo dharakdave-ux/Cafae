@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrewByte Cafe - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header + Navbar -->
+  <header class="site-header" id="top">
+    <div class="container header-container">
+      <h1 class="site-title" id="siteTitle">☕ BrewByte Cafe</h1>
+      <p class="site-tagline" id="siteTagline">Cafe Website for Web Scraping Practice</p>
+    </div>
+
+    <nav class="navbar" id="mainNavbar">
+      <div class="container nav-container">
+        <a class="nav-link active" id="navHome" href="index.html">Home</a>
+        <a class="nav-link" id="navAbout" href="about.html">About</a>
+        <a class="nav-link" id="navContact" href="contact.html">Contact Us</a>
+        <a class="nav-link" id="navMenuTable" href="#menuTableSection">Menu Table</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="site-main" id="homeMain">
+    <section class="intro-section" id="introSection">
+      <div class="container">
+        <h2 class="section-title" id="introTitle">Welcome to BrewByte Cafe</h2>
+
+        <p class="intro-text" id="introText">
+          This website is designed for practicing <strong>web scraping</strong>.
+          It contains structured content like navigation links, cards, images, and a large data table.
+        </p>
+
+        <p class="purpose-text" id="purposeText">
+          <strong>Purpose:</strong> “This website is designed for practicing web scraping”
+        </p>
+      </div>
+    </section>
+
+    <!-- Clickable Image Cards -->
+    <section class="cards-section" id="cardsSection">
+      <div class="container">
+        <h2 class="section-title" id="cardsTitle">Explore Sections</h2>
+
+        <div class="cards-grid" id="cardsGrid">
+
+          <article class="card" id="cardMenu">
+            <a class="card-link" href="#menuTableSection" id="menuCardLink">
+              <img class="card-image" id="imgCoffee" src="images/coffee.jpg" alt="Coffee Image">
+              <div class="card-body">
+                <h3 class="card-title" id="cardMenuTitle">Cafe Menu Table</h3>
+                <p class="card-text" id="cardMenuText">
+                  View 100 realistic menu records (great for scraping tables).
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card" id="cardAbout">
+            <a class="card-link" href="about.html" id="aboutCardLink">
+              <img class="card-image" id="imgPastry" src="images/pastry.jpg" alt="Pastry Image">
+              <div class="card-body">
+                <h3 class="card-title" id="cardAboutTitle">About Web Scraping</h3>
+                <p class="card-text" id="cardAboutText">
+                  Learn what scraping is and what to be careful about.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card" id="cardContact">
+            <a class="card-link" href="contact.html" id="contactCardLink">
+              <img class="card-image" id="imgInterior" src="images/interior.jpg" alt="Cafe Interior Image">
+              <div class="card-body">
+                <h3 class="card-title" id="cardContactTitle">Contact & Feedback</h3>
+                <p class="card-text" id="cardContactText">
+                  Dummy contact info + feedback form for scraping practice.
+                </p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Data Table Section -->
+    <section class="table-section" id="menuTableSection">
+      <div class="container">
+        <h2 class="section-title" id="menuTableTitle">Cafe Menu Dataset (100 Records)</h2>
+
+        <p class="section-description" id="menuTableDesc">
+          This table contains 100 filled tuple records with columns: ID, Name, Category, Price, Rating.
+          Perfect for practicing scraping using BeautifulSoup / Pandas / Selenium.
+        </p>
+
+        <div class="table-wrapper" id="tableWrapper">
+          <table class="data-table" id="menuTable">
+            <thead class="table-head" id="menuTableHead">
+              <tr class="table-row header-row" id="headerRow">
+                <th class="table-header" id="colId">ID</th>
+                <th class="table-header" id="colName">Name</th>
+                <th class="table-header" id="colCategory">Category</th>
+                <th class="table-header" id="colPrice">Price (₹)</th>
+                <th class="table-header" id="colRating">Rating</th>
+              </tr>
+            </thead>
+
+            <tbody class="table-body" id="menuTableBody">
+              <!-- 100 Records -->
+              <tr class="table-row" id="row-1"><td class="cell id">1</td><td class="cell name">Espresso Shot</td><td class="cell category">Coffee</td><td class="cell price">99</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-2"><td class="cell id">2</td><td class="cell name">Americano</td><td class="cell category">Coffee</td><td class="cell price">129</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-3"><td class="cell id">3</td><td class="cell name">Cappuccino</td><td class="cell category">Coffee</td><td class="cell price">159</td><td class="cell rating">4.7</td></tr>
+              <tr class="table-row" id="row-4"><td class="cell id">4</td><td class="cell name">Cafe Latte</td><td class="cell category">Coffee</td><td class="cell price">169</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-5"><td class="cell id">5</td><td class="cell name">Mocha</td><td class="cell category">Coffee</td><td class="cell price">189</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-6"><td class="cell id">6</td><td class="cell name">Flat White</td><td class="cell category">Coffee</td><td class="cell price">179</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-7"><td class="cell id">7</td><td class="cell name">Cold Brew</td><td class="cell category">Coffee</td><td class="cell price">199</td><td class="cell rating">4.7</td></tr>
+              <tr class="table-row" id="row-8"><td class="cell id">8</td><td class="cell name">Iced Latte</td><td class="cell category">Coffee</td><td class="cell price">189</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-9"><td class="cell id">9</td><td class="cell name">Caramel Macchiato</td><td class="cell category">Coffee</td><td class="cell price">219</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-10"><td class="cell id">10</td><td class="cell name">Vanilla Latte</td><td class="cell category">Coffee</td><td class="cell price">209</td><td class="cell rating">4.4</td></tr>
+
+              <tr class="table-row" id="row-11"><td class="cell id">11</td><td class="cell name">Masala Chai</td><td class="cell category">Tea</td><td class="cell price">89</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-12"><td class="cell id">12</td><td class="cell name">Ginger Tea</td><td class="cell category">Tea</td><td class="cell price">79</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-13"><td class="cell id">13</td><td class="cell name">Green Tea</td><td class="cell category">Tea</td><td class="cell price">99</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-14"><td class="cell id">14</td><td class="cell name">Lemon Honey Tea</td><td class="cell category">Tea</td><td class="cell price">109</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-15"><td class="cell id">15</td><td class="cell name">Classic Black Tea</td><td class="cell category">Tea</td><td class="cell price">89</td><td class="cell rating">4.0</td></tr>
+              <tr class="table-row" id="row-16"><td class="cell id">16</td><td class="cell name">Kashmiri Kahwa</td><td class="cell category">Tea</td><td class="cell price">139</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-17"><td class="cell id">17</td><td class="cell name">Iced Peach Tea</td><td class="cell category">Tea</td><td class="cell price">149</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-18"><td class="cell id">18</td><td class="cell name">Chamomile Tea</td><td class="cell category">Tea</td><td class="cell price">129</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-19"><td class="cell id">19</td><td class="cell name">Mint Tea</td><td class="cell category">Tea</td><td class="cell price">119</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-20"><td class="cell id">20</td><td class="cell name">Cardamom Tea</td><td class="cell category">Tea</td><td class="cell price">89</td><td class="cell rating">4.1</td></tr>
+
+              <tr class="table-row" id="row-21"><td class="cell id">21</td><td class="cell name">Hot Chocolate</td><td class="cell category">Beverage</td><td class="cell price">179</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-22"><td class="cell id">22</td><td class="cell name">Classic Milkshake</td><td class="cell category">Beverage</td><td class="cell price">199</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-23"><td class="cell id">23</td><td class="cell name">Strawberry Milkshake</td><td class="cell category">Beverage</td><td class="cell price">219</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-24"><td class="cell id">24</td><td class="cell name">Mango Smoothie</td><td class="cell category">Beverage</td><td class="cell price">229</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-25"><td class="cell id">25</td><td class="cell name">Berry Smoothie</td><td class="cell category">Beverage</td><td class="cell price">239</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-26"><td class="cell id">26</td><td class="cell name">Fresh Lime Soda</td><td class="cell category">Beverage</td><td class="cell price">119</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-27"><td class="cell id">27</td><td class="cell name">Iced Coffee</td><td class="cell category">Beverage</td><td class="cell price">179</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-28"><td class="cell id">28</td><td class="cell name">Lemonade</td><td class="cell category">Beverage</td><td class="cell price">129</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-29"><td class="cell id">29</td><td class="cell name">Iced Mocha</td><td class="cell category">Beverage</td><td class="cell price">209</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-30"><td class="cell id">30</td><td class="cell name">Butterscotch Shake</td><td class="cell category">Beverage</td><td class="cell price">229</td><td class="cell rating">4.2</td></tr>
+
+              <tr class="table-row" id="row-31"><td class="cell id">31</td><td class="cell name">Veg Grilled Sandwich</td><td class="cell category">Snacks</td><td class="cell price">149</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-32"><td class="cell id">32</td><td class="cell name">Cheese Toast</td><td class="cell category">Snacks</td><td class="cell price">129</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-33"><td class="cell id">33</td><td class="cell name">Paneer Wrap</td><td class="cell category">Snacks</td><td class="cell price">179</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-34"><td class="cell id">34</td><td class="cell name">Chicken Wrap</td><td class="cell category">Snacks</td><td class="cell price">199</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-35"><td class="cell id">35</td><td class="cell name">French Fries</td><td class="cell category">Snacks</td><td class="cell price">119</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-36"><td class="cell id">36</td><td class="cell name">Peri Peri Fries</td><td class="cell category">Snacks</td><td class="cell price">139</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-37"><td class="cell id">37</td><td class="cell name">Garlic Bread</td><td class="cell category">Snacks</td><td class="cell price">159</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-38"><td class="cell id">38</td><td class="cell name">Cheese Garlic Bread</td><td class="cell category">Snacks</td><td class="cell price">179</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-39"><td class="cell id">39</td><td class="cell name">Veg Puff</td><td class="cell category">Snacks</td><td class="cell price">69</td><td class="cell rating">4.0</td></tr>
+              <tr class="table-row" id="row-40"><td class="cell id">40</td><td class="cell name">Chicken Puff</td><td class="cell category">Snacks</td><td class="cell price">79</td><td class="cell rating">4.1</td></tr>
+
+              <tr class="table-row" id="row-41"><td class="cell id">41</td><td class="cell name">Margherita Pizza</td><td class="cell category">Pizza</td><td class="cell price">249</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-42"><td class="cell id">42</td><td class="cell name">Farmhouse Pizza</td><td class="cell category">Pizza</td><td class="cell price">299</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-43"><td class="cell id">43</td><td class="cell name">Paneer Tikka Pizza</td><td class="cell category">Pizza</td><td class="cell price">319</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-44"><td class="cell id">44</td><td class="cell name">BBQ Chicken Pizza</td><td class="cell category">Pizza</td><td class="cell price">349</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-45"><td class="cell id">45</td><td class="cell name">Veg Supreme Pizza</td><td class="cell category">Pizza</td><td class="cell price">329</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-46"><td class="cell id">46</td><td class="cell name">Cheese Burst Pizza</td><td class="cell category">Pizza</td><td class="cell price">359</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-47"><td class="cell id">47</td><td class="cell name">Pepperoni Pizza</td><td class="cell category">Pizza</td><td class="cell price">379</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-48"><td class="cell id">48</td><td class="cell name">Mushroom Pizza</td><td class="cell category">Pizza</td><td class="cell price">289</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-49"><td class="cell id">49</td><td class="cell name">Corn & Cheese Pizza</td><td class="cell category">Pizza</td><td class="cell price">279</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-50"><td class="cell id">50</td><td class="cell name">Spicy Jalapeno Pizza</td><td class="cell category">Pizza</td><td class="cell price">309</td><td class="cell rating">4.4</td></tr>
+
+              <tr class="table-row" id="row-51"><td class="cell id">51</td><td class="cell name">Classic Burger</td><td class="cell category">Burgers</td><td class="cell price">199</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-52"><td class="cell id">52</td><td class="cell name">Cheese Burger</td><td class="cell category">Burgers</td><td class="cell price">219</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-53"><td class="cell id">53</td><td class="cell name">Veggie Burger</td><td class="cell category">Burgers</td><td class="cell price">189</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-54"><td class="cell id">54</td><td class="cell name">Chicken Burger</td><td class="cell category">Burgers</td><td class="cell price">239</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-55"><td class="cell id">55</td><td class="cell name">Double Patty Burger</td><td class="cell category">Burgers</td><td class="cell price">279</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-56"><td class="cell id">56</td><td class="cell name">Peri Peri Burger</td><td class="cell category">Burgers</td><td class="cell price">249</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-57"><td class="cell id">57</td><td class="cell name">Spicy Paneer Burger</td><td class="cell category">Burgers</td><td class="cell price">229</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-58"><td class="cell id">58</td><td class="cell name">Crispy Chicken Burger</td><td class="cell category">Burgers</td><td class="cell price">259</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-59"><td class="cell id">59</td><td class="cell name">BBQ Burger</td><td class="cell category">Burgers</td><td class="cell price">269</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-60"><td class="cell id">60</td><td class="cell name">Mayo Burger</td><td class="cell category">Burgers</td><td class="cell price">209</td><td class="cell rating">4.1</td></tr>
+
+              <tr class="table-row" id="row-61"><td class="cell id">61</td><td class="cell name">Chocolate Brownie</td><td class="cell category">Dessert</td><td class="cell price">149</td><td class="cell rating">4.5</td></tr>
+              <tr class="table-row" id="row-62"><td class="cell id">62</td><td class="cell name">Chocolate Muffin</td><td class="cell category">Dessert</td><td class="cell price">119</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-63"><td class="cell id">63</td><td class="cell name">Blueberry Muffin</td><td class="cell category">Dessert</td><td class="cell price">129</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-64"><td class="cell id">64</td><td class="cell name">Red Velvet Pastry</td><td class="cell category">Dessert</td><td class="cell price">169</td><td class="cell rating">4.4</td></tr>
+              <tr class="table-row" id="row-65"><td class="cell id">65</td><td class="cell name">Chocolate Pastry</td><td class="cell category">Dessert</td><td class="cell price">159</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-66"><td class="cell id">66</td><td class="cell name">Cheesecake Slice</td><td class="cell category">Dessert</td><td class="cell price">199</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-67"><td class="cell id">67</td><td class="cell name">Tiramisu Cup</td><td class="cell category">Dessert</td><td class="cell price">219</td><td class="cell rating">4.6</td></tr>
+              <tr class="table-row" id="row-68"><td class="cell id">68</td><td class="cell name">Vanilla Ice Cream</td><td class="cell category">Dessert</td><td class="cell price">99</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-69"><td class="cell id">69</td><td class="cell name">Chocolate Ice Cream</td><td class="cell category">Dessert</td><td class="cell price">109</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-70"><td class="cell id">70</td><td class="cell name">Strawberry Ice Cream</td><td class="cell category">Dessert</td><td class="cell price">109</td><td class="cell rating">4.2</td></tr>
+
+              <tr class="table-row" id="row-71"><td class="cell id">71</td><td class="cell name">Caesar Salad</td><td class="cell category">Healthy</td><td class="cell price">219</td><td class="cell rating">4.1</td></tr>
+              <tr class="table-row" id="row-72"><td class="cell id">72</td><td class="cell name">Greek Salad</td><td class="cell category">Healthy</td><td class="cell price">229</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-73"><td class="cell id">73</td><td class="cell name">Fruit Bowl</td><td class="cell category">Healthy</td><td class="cell price">199</td><td class="cell rating">4.3</td></tr>
+              <tr class="table-row" id="row-74"><td class="cell id">74</td><td class="cell name">Oats & Honey Bowl</td><td class="cell category">Healthy</td><td class="cell price">189</td><td class="cell rating">4.2</td></tr>
+              <tr class="table-row" id="row-75"><td class="cell id">75</

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrewByte Cafe - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="contactTop">
+    <div class="container header-container">
+      <h1 class="site-title" id="contactSiteTitle">☕ BrewByte Cafe</h1>
+      <p class="site-tagline" id="contactTagline">Contact & Feedback</p>
+    </div>
+
+    <nav class="navbar" id="mainNavbar">
+      <div class="container nav-container">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="site-main" id="contactMain">
+    <section class="content-section" id="contactInfoSection">
+      <div class="container">
+        <h2 class="section-title" id="contactTitle">Contact Information</h2>
+
+        <div class="contact-details" id="contactDetails">
+          <p class="contact-item" id="contactEmail"><strong>Email:</strong> support@brewbytecafe.com</p>
+          <p class="contact-item" id="contactPhone"><strong>Phone:</strong> +91 98765 43210</p>
+          <p class="contact-item" id="contactAddress"><strong>Address:</strong> 21 Coffee Street, Mumbai, India</p>
+        </div>
+
+        <h2 class="section-title" id="feedbackTitle">Feedback Form</h2>
+
+        <form class="feedback-form" id="feedbackForm" action="#" method="post">
+          <div class="form-group" id="groupName">
+            <label class="form-label" id="labelName" for="nameInput">Name</label>
+            <input class="form-input" id="nameInput" type="text" name="name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group" id="groupEmail">
+            <label class="form-label" id="labelEmail" for="emailInput">Email</label>
+            <input class="form-input" id="emailInput" type="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group" id="groupFeedback">
+            <label class="form-label" id="labelFeedback" for="feedbackInput">Feedback</label>
+            <textarea class="form-textarea" id="feedbackInput" name="feedback" rows="5" placeholder="Write your feedback..." required></textarea>
+          </div>
+
+          <button class="submit-button" id="submitBtn" type="submit">Submit Feedback</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contactFooter">
+    <div class="container">
+      <p class="footer-text">© 2026 BrewByte Cafe | Contact Page</p>
+    </div>
+  </footer>
+
+</body>
+</html>
